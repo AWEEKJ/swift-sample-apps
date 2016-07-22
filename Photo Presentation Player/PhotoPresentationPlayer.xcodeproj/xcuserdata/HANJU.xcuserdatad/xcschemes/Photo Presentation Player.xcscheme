@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "F60718321D4233CE00E85D1B"
-               BuildableName = "Photo Presentation Player.app"
-               BlueprintName = "Photo Presentation Player"
-               ReferencedContainer = "container:Photo Presentation Player.xcodeproj">
+               BuildableName = "PhotoPresentationPlayer.app"
+               BlueprintName = "PhotoPresentationPlayer"
+               ReferencedContainer = "container:PhotoPresentationPlayer.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F60718321D4233CE00E85D1B"
-            BuildableName = "Photo Presentation Player.app"
-            BlueprintName = "Photo Presentation Player"
-            ReferencedContainer = "container:Photo Presentation Player.xcodeproj">
+            BuildableName = "PhotoPresentationPlayer.app"
+            BlueprintName = "PhotoPresentationPlayer"
+            ReferencedContainer = "container:PhotoPresentationPlayer.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -56,9 +56,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F60718321D4233CE00E85D1B"
-            BuildableName = "Photo Presentation Player.app"
-            BlueprintName = "Photo Presentation Player"
-            ReferencedContainer = "container:Photo Presentation Player.xcodeproj">
+            BuildableName = "PhotoPresentationPlayer.app"
+            BlueprintName = "PhotoPresentationPlayer"
+            ReferencedContainer = "container:PhotoPresentationPlayer.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -75,9 +75,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F60718321D4233CE00E85D1B"
-            BuildableName = "Photo Presentation Player.app"
-            BlueprintName = "Photo Presentation Player"
-            ReferencedContainer = "container:Photo Presentation Player.xcodeproj">
+            BuildableName = "PhotoPresentationPlayer.app"
+            BlueprintName = "PhotoPresentationPlayer"
+            ReferencedContainer = "container:PhotoPresentationPlayer.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

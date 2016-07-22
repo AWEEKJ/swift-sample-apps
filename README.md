@@ -13,3 +13,4 @@ This is Swift Sample Applications for beginners.
   - optional-value
 2. BookManager
 3. VisualBookManager
+4. PhotoPresentationPlayer

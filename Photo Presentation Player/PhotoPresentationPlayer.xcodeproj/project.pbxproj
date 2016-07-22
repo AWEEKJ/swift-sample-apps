@@ -30,7 +30,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		F60718331D4233CE00E85D1B /* Photo Presentation Player.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Photo Presentation Player.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F60718331D4233CE00E85D1B /* PhotoPresentationPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoPresentationPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F60718361D4233CE00E85D1B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F60718381D4233CE00E85D1B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F607183B1D4233CE00E85D1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -68,7 +68,7 @@
 		F607182A1D4233CE00E85D1B = {
 			isa = PBXGroup;
 			children = (
-				F60718351D4233CE00E85D1B /* Photo Presentation Player */,
+				F60718351D4233CE00E85D1B /* PhotoPresentationPlayer */,
 				F60718341D4233CE00E85D1B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -76,12 +76,12 @@
 		F60718341D4233CE00E85D1B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F60718331D4233CE00E85D1B /* Photo Presentation Player.app */,
+				F60718331D4233CE00E85D1B /* PhotoPresentationPlayer.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		F60718351D4233CE00E85D1B /* Photo Presentation Player */ = {
+		F60718351D4233CE00E85D1B /* PhotoPresentationPlayer */ = {
 			isa = PBXGroup;
 			children = (
 				F60718481D42342100E85D1B /* Resource */,
@@ -92,6 +92,7 @@
 				F607183F1D4233CE00E85D1B /* LaunchScreen.storyboard */,
 				F60718421D4233CE00E85D1B /* Info.plist */,
 			);
+			name = PhotoPresentationPlayer;
 			path = "Photo Presentation Player";
 			sourceTree = "<group>";
 		};
@@ -120,9 +121,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F60718321D4233CE00E85D1B /* Photo Presentation Player */ = {
+		F60718321D4233CE00E85D1B /* PhotoPresentationPlayer */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F60718451D4233CE00E85D1B /* Build configuration list for PBXNativeTarget "Photo Presentation Player" */;
+			buildConfigurationList = F60718451D4233CE00E85D1B /* Build configuration list for PBXNativeTarget "PhotoPresentationPlayer" */;
 			buildPhases = (
 				F607182F1D4233CE00E85D1B /* Sources */,
 				F60718301D4233CE00E85D1B /* Frameworks */,
@@ -132,9 +133,9 @@
 			);
 			dependencies = (
 			);
-			name = "Photo Presentation Player";
+			name = PhotoPresentationPlayer;
 			productName = "Photo Presentation Player";
-			productReference = F60718331D4233CE00E85D1B /* Photo Presentation Player.app */;
+			productReference = F60718331D4233CE00E85D1B /* PhotoPresentationPlayer.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -152,7 +153,7 @@
 					};
 				};
 			};
-			buildConfigurationList = F607182E1D4233CE00E85D1B /* Build configuration list for PBXProject "Photo Presentation Player" */;
+			buildConfigurationList = F607182E1D4233CE00E85D1B /* Build configuration list for PBXProject "PhotoPresentationPlayer" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -165,7 +166,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F60718321D4233CE00E85D1B /* Photo Presentation Player */,
+				F60718321D4233CE00E85D1B /* PhotoPresentationPlayer */,
 			);
 		};
 /* End PBXProject section */
@@ -320,7 +321,7 @@
 				INFOPLIST_FILE = "Photo Presentation Player/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.aweek-jo.Photo-Presentation-Player";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = PhotoPresentationPlayer;
 			};
 			name = Debug;
 		};
@@ -331,14 +332,14 @@
 				INFOPLIST_FILE = "Photo Presentation Player/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.aweek-jo.Photo-Presentation-Player";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = PhotoPresentationPlayer;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F607182E1D4233CE00E85D1B /* Build configuration list for PBXProject "Photo Presentation Player" */ = {
+		F607182E1D4233CE00E85D1B /* Build configuration list for PBXProject "PhotoPresentationPlayer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F60718431D4233CE00E85D1B /* Debug */,
@@ -347,13 +348,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F60718451D4233CE00E85D1B /* Build configuration list for PBXNativeTarget "Photo Presentation Player" */ = {
+		F60718451D4233CE00E85D1B /* Build configuration list for PBXNativeTarget "PhotoPresentationPlayer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F60718461D4233CE00E85D1B /* Debug */,
 				F60718471D4233CE00E85D1B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MiniWebBrowser" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="J0S-Ue-CeP">
+                                <rect key="frame" x="-60" y="-14" width="121" height="29"/>
+                                <segments>
+                                    <segment title="facebook"/>
+                                    <segment title="twitter"/>
+                                    <segment title="apple"/>
+                                    <segment title="google"/>
+                                </segments>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="28" width="375" height="29"/>
+                                </variation>
+                                <connections>
+                                    <action selector="bookmarkAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="i3i-JM-ihp"/>
+                                </connections>
+                            </segmentedControl>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="URL" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="yg5-hj-YK6">
+                                <rect key="frame" x="-25" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="URL" returnKeyType="go"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="58" width="375" height="30"/>
+                                </variation>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Fug-L5-EgQ"/>
+                                </connections>
+                            </textField>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nlE-fT-FGW">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="RA6-y2-bJY"/>
+                                    <barButtonItem systemItem="rewind" id="134-6j-DGj">
+                                        <connections>
+                                            <action selector="goBack" destination="eMd-Fn-26m" id="JxC-K3-cYn"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="TNo-F6-FV6"/>
+                                    <barButtonItem systemItem="fastForward" id="ipk-Ue-SxA">
+                                        <connections>
+                                            <action selector="goForward" destination="eMd-Fn-26m" id="sca-4T-WQM"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="hbv-Jc-UhH"/>
+                                    <barButtonItem systemItem="stop" id="gba-Ns-iiQ">
+                                        <connections>
+                                            <action selector="stopLoading" destination="eMd-Fn-26m" id="Fkq-7Y-n9X"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="HdJ-02-DLa"/>
+                                    <barButtonItem systemItem="refresh" id="j8G-is-QW8">
+                                        <connections>
+                                            <action selector="reload" destination="eMd-Fn-26m" id="M8z-Cc-ugO"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="PIA-Vq-M16"/>
+                                </items>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                </variation>
+                            </toolbar>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eMd-Fn-26m">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="84" width="375" height="539"/>
+                                </variation>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="eTh-4O-uup"/>
+                                </connections>
+                            </webView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="uHo-1w-0Yv">
+                                <rect key="frame" x="-10" y="-10" width="20" height="20"/>
+                                <rect key="contentStretch" x="0.14999999999999999" y="0.0" width="1" height="1"/>
+                                <color key="color" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="169" y="335" width="37" height="37"/>
+                                </variation>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="J0S-Ue-CeP"/>
+                                <exclude reference="yg5-hj-YK6"/>
+                                <exclude reference="nlE-fT-FGW"/>
+                                <exclude reference="eMd-Fn-26m"/>
+                                <exclude reference="uHo-1w-0Yv"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="J0S-Ue-CeP"/>
+                                <include reference="yg5-hj-YK6"/>
+                                <include reference="nlE-fT-FGW"/>
+                                <include reference="eMd-Fn-26m"/>
+                                <include reference="uHo-1w-0Yv"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="bookmarkSegmentControl" destination="J0S-Ue-CeP" id="ooa-g5-6Kc"/>
+                        <outlet property="mainWebView" destination="eMd-Fn-26m" id="uhA-d0-Zj8"/>
+                        <outlet property="spinningActivityIndicatorView" destination="uHo-1w-0Yv" id="5WO-aA-w6C"/>
+                        <outlet property="urlTextField" destination="yg5-hj-YK6" id="GUX-DE-3Tp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

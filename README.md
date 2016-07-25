@@ -14,3 +14,4 @@ This is Swift Sample Applications for beginners.
 2. BookManager
 3. VisualBookManager
 4. PhotoPresentationPlayer
+5. SignInDisplay
